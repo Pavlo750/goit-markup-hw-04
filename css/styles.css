@@ -284,6 +284,27 @@ p {
 }
 
 /* section 3 */
+.ellipse {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.ellipse:hover {
+  background-color: #31d0aa;
+}
+.svg {
+  margin: 12px;
+  fill: #f4f4fd;
+}
+
+.user-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
 .posada {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -340,6 +361,7 @@ p {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-bottom: 8px;
 }
 .fonfoto {
   padding-top: 120px;
@@ -408,6 +430,27 @@ p {
 }
 
 /* Futer */
+.media {
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+.user-svg-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.media-paragraf {
+  display: flex;
+
+  flex-direction: column;
+  align-items: baseline;
+}
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
   padding-top: 100px;
