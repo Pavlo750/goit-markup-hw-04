@@ -150,12 +150,8 @@ p {
 /* section 1 */
 .fon {
   background: var(--NAVY-BLUE, #2e2f42);
-  background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  );
   background-image: url(../images/people-office\ 1.jpg);
-
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-position: center;
   background-size: cover;
   display: block;
@@ -198,6 +194,7 @@ p {
   border: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .cnopca:hover {
   background: var(--OCEAN, #404bbf);
@@ -285,6 +282,10 @@ p {
 
 /* section 3 */
 .ellipse {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
@@ -294,7 +295,6 @@ p {
   background-color: #31d0aa;
 }
 .svg {
-  margin: 12px;
   fill: #f4f4fd;
 }
 
@@ -372,6 +372,32 @@ p {
 .fonfototo {
   width: calc((100% - 48px) / 3);
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 32px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #f4f4fd;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1, 28;
+  letter-spacing: 0.02em;
+  background-color: #3f51b5;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+.portfolio-wraper:hover .overlay {
+  transform: translateY(0);
+}
+
+.portfolio-wraper {
+  position: relative;
+  overflow: hidden;
+}
 
 .nazva {
   padding: 32px 16px;
@@ -430,7 +456,8 @@ p {
 }
 
 /* Futer */
-.media {
+
+.mediazona {
   color: var(--WHITE, #fff);
   font-family: Roboto;
   font-size: 16px;
@@ -447,7 +474,6 @@ p {
 }
 .media-paragraf {
   display: flex;
-
   flex-direction: column;
   align-items: baseline;
 }
