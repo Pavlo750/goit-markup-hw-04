@@ -297,7 +297,10 @@ p {
   border-radius: 50%;
 }
 .ellipse:hover {
-  background-color: #31d0aa;
+  background-color: #404bbf;
+}
+.ellipse:focus {
+  background-color: #404bbf;
 }
 .svg {
   fill: #f4f4fd;
