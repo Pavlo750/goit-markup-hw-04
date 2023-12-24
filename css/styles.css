@@ -288,8 +288,8 @@ p {
 /* section 3 */
 .ellipse {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-content: center;
   flex-wrap: wrap;
   width: 40px;
   height: 40px;
