@@ -492,6 +492,22 @@ p {
 }
 
 /* Futer */
+
+.pos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pos:hover:focus {
+  background-color: #31d0aa;
+}
 .futrcon {
   display: flex;
   align-items: baseline;
@@ -507,12 +523,16 @@ p {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+.cas {
+  gap: 16px;
 }
 .user-svg-svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 .media-paragraf {
   display: flex;
