@@ -155,17 +155,7 @@ p {
   letter-spacing: 0.32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
+
 .link:hover {
   color: #404bbf;
 }
@@ -405,6 +395,7 @@ p {
 /* section 4 */
 .fonfototo {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fonfototo:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -501,7 +492,13 @@ p {
 }
 
 /* Futer */
-
+.futrcon {
+  display: flex;
+  align-items: baseline;
+}
+.logo-p {
+  margin-right: 120px;
+}
 .mediazona {
   color: var(--WHITE, #fff);
   font-family: Roboto;
